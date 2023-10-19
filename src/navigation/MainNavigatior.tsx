@@ -1,19 +1,17 @@
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import SplashScreen from 'react-native-splash-screen';
-import {Platform} from 'react-native';
 import TransactionsListScreen from '../screens/TransactionsListScreen';
 import TransactionsDetail1Screen from '../screens/TransactionDetail1Screen';
 import TransactionsDetail2Screen from '../screens/TransactionDetail2Screen';
 import ErrorScreen from '../screens/ErrorScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<any>();
 
 export function MainNavigator(props: any) {
   const navTheme = DefaultTheme;
-  navTheme.colors.background = '#2D3134';
-  navTheme.colors.text = '#fff';
+  // navTheme.colors.background = '#2D3134';
+  // navTheme.colors.text = '#fff';
 
   return (
     <NavigationContainer theme={navTheme}>
