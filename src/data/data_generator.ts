@@ -1,4 +1,7 @@
-// For further or later modifications/reference, The used code in https://json-generator.com/ to generate the 1000 transactions is stated below
+/* For further or later modifications/reference
+ * The used code in https://json-generator.com/
+ * to generate the 1000 transactions is stated below
+ */
 [
   '{{repeat(1000)}}',
   {
