@@ -49,6 +49,7 @@ function TransactionsListScreen(props: Props) {
       <Text
         style={{
           fontSize: 15,
+          color: 'blue',
         }}>
         {section.title}
       </Text>

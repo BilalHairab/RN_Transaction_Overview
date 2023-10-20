@@ -10,6 +10,7 @@ function TransactionsDetail1Screen({route}) {
           alignContent: 'center',
           alignItems: 'center',
           alignSelf: 'center',
+          color: 'green'
         }}>{`Details 1 of Transaction ${transaction.objectId}`}</Text>
     </View>
   );

@@ -10,6 +10,7 @@ function ErrorScreen({route}) {
           alignContent: 'center',
           alignItems: 'center',
           alignSelf: 'center',
+          color: 'red'
         }}>{`Error of Transaction ${transaction.objectId}`}</Text>
     </View>
   );
