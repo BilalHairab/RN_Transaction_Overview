@@ -19,7 +19,7 @@ function App(): JSX.Element {
   useEffect(() => {
     setTimeout(() => {
       setRenderedStack(<MainNavigator />);
-    }, 2000);
+    }, 3000);
   }, []);
   return <Provider store={store}>{renderedStack}</Provider>;
 }

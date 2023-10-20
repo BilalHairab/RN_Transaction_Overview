@@ -2,7 +2,10 @@ import {RootState} from '../store';
 import {TransactionRecord} from '../../types';
 
 export const currentOrderedTransactionsSelector = (state: RootState) =>
-  state.transactionsReducer.ordered_transactions as TransactionRecord[];
+  state.transactionsReducer.ordered_transactions as Map<
+    string,
+    TransactionRecord[]
+  >;
 
 export const setLoadedTransactions = (transactions: TransactionRecord[]) => {
   return {
@@ -11,9 +14,11 @@ export const setLoadedTransactions = (transactions: TransactionRecord[]) => {
   };
 };
 
-export const setOrderedTransactions = (transactions: TransactionRecord[]) => {
+export const setOrderedTransactions = (
+  transactionsSections: Map<string, TransactionRecord[]>,
+) => {
   return {
     type: 'setOrderedTransactions',
-    payload: transactions,
+    payload: transactionsSections,
   };
 };

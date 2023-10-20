@@ -1,5 +1,4 @@
-export type TransactionStatus =
-  | 'APPROVED'
+type TransactionStatus = 'APPROVED'
   | 'DECLINED'
   | 'PENDING'
   | 'CANCELLED'
@@ -15,7 +14,7 @@ export type TransactionDetails = {
 };
 
 export interface TransactionRecord {
-  objectType: 'TRANSACTION';
+  objectType: string;
   status: TransactionStatus;
   objectId: string;
   timestamp: string;

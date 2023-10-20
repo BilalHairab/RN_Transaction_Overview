@@ -23,16 +23,23 @@ export function MainNavigator(props: any) {
         <Stack.Screen
           name="TransactionsList"
           component={TransactionsListScreen}
+          options={{title: 'Account Transactions'}}
         />
         <Stack.Screen
           name="TransactionDetail1"
           component={TransactionsDetail1Screen}
+          options={{title: 'Details 1'}}
         />
         <Stack.Screen
           name="TransactionDetail2"
           component={TransactionsDetail2Screen}
+          options={{title: 'Details 2'}}
         />
-        <Stack.Screen name="ErrorScreen" component={ErrorScreen} />
+        <Stack.Screen
+          name="ErrorScreen"
+          component={ErrorScreen}
+          options={{title: 'Error'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
